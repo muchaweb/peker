@@ -1,0 +1,669 @@
+<!DOCTYPE html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="es" class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Peker</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!--[if lt IE 9]><script src="scripts/vendor/selectivizr-1.0.2.min.js"></script><![endif]-->
+    <script src="scripts/vendor.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+  </head>
+  <body><!--[if lt IE 8]>
+    <div class="browsehappy">
+      <p>
+        Está utilizando un navegador <strong>obsoleto</strong>
+        Por favor <a href="http://browsehappy.com/">actualice su navegador</a>
+        para mejorar su experiencia.
+      </p>
+    </div><![endif]-->
+    
+    
+    <!-- Log in Popup -->
+    <section id="login-popup">
+      <div class="popup__login clearfix">
+        <h1 class="popup__title">Iniciar sesión</h1>
+        <form action="#" method="post" id="popup-form">
+          <label for="" class="form__label">Correo eletrónico</label>
+          <input type="text" class="form__input" name="email">
+          <label for="" class="form__label">Contraseña</label>
+          <input type="text" class="form__input" name="pass">
+          <button class="form__btn">Entrar</button>
+          <a href="#" class="form__forgot">¿Olvidaste tu contraseña?</a>
+        </form>
+      </div>
+      <div class="popup__register">
+        <h1 class="popup__title">¿No estas registrado?</h1>
+        <a href="login.html" class="form__btn">Registrarme</a>
+      </div>
+    </section>
+    <!-- end Log in Popup -->
+    
+    <!-- Zoom Structure -->
+    <div id="zoom">
+      <p>Arrastrar dentro del area visible para explorar</p>
+      <div class="zoom">
+        <div class="zoom-inner">
+          <div class="zoom-container">
+            <div class="zoom-mask">
+              <img class="zoom-image" src=""/>
+            </div>
+            <img class="zoom-image zoom-image-overlay" src=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Zoom Structure -->
+    
+    
+    
+    <!-- Card Section -->
+    <div class="card-bg"></div>
+    
+    <section class="card-section">
+
+      <a href="#" class="close-card">
+        <img src="images/close__icon.png" alt="">
+      </a>
+      
+      <div class="card-content">
+        <div class="container">
+          <div class="card-info-product">
+            <h1 class="card__title">Nombre del producto</h1>
+            
+            <div class="card__info-content">
+              <div class="row clearfix">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="card__gallery">
+                    <div id="product-gallery" class="royalSlider rsDefault">
+                      <div class="rsContent">
+                        <div class="gallery__img">
+                          <a href="#zoom" class="zoom-trigger" data-image="images/slide__img.jpg">
+                            <i class="fa fa-search-plus"></i>
+                          </a>
+                          <img class="img-responsive rsImg" src="images/slide__img.jpg" data-rsTmb="images/slide__img.jpg" alt="" />
+                        </div>
+                      </div>
+                      <div class="gallery__img">
+                        <a href="#zoom" class="zoom-trigger" data-image="images/slide__img.jpg">
+                          <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img class="img-responsive rsImg" src="images/slide__img.jpg" data-rsTmb="images/slide__img.jpg" alt="" />
+                      </div>
+                      <div class="gallery__img">
+                        <a href="#zoom" class="zoom-trigger" data-image="images/slide__img.jpg">
+                          <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img class="img-responsive rsImg" src="images/slide__img.jpg" data-rsTmb="images/slide__img.jpg" alt="" />
+                      </div>
+                      <div class="gallery__img">
+                        <a href="#zoom" class="zoom-trigger" data-image="images/slide__img.jpg">
+                          <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img class="img-responsive rsImg" src="images/slide__img.jpg" data-rsTmb="images/slide__img.jpg" alt="" />
+                      </div>
+                      <div class="gallery__img">
+                        <a href="#zoom" class="zoom-trigger" data-image="images/slide__img.jpg">
+                          <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img class="img-responsive rsImg" src="images/slide__img.jpg" data-rsTmb="images/slide__img.jpg" alt="" />
+                      </div>
+                      <div class="gallery__img">
+                        <a href="#zoom" class="zoom-trigger" data-image="images/slide__img.jpg">
+                          <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img class="img-responsive rsImg" src="images/slide__img.jpg" data-rsTmb="images/slide__img.jpg" alt="" />
+                      </div>
+                      <div class="gallery__img">
+                        <a href="#zoom" class="zoom-trigger" data-image="images/slide__img.jpg">
+                          <i class="fa fa-search-plus"></i>
+                        </a>
+                        <img class="img-responsive rsImg" src="images/slide__img.jpg" data-rsTmb="images/slide__img.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="card__info">
+                    <span class="card__price">$2500.00</span>
+                    <hr>
+                    <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, ut delectus sequi! Consectetur praesentium officia odio alias fuga facere modi, reiciendis nulla tenetur officiis veritatis totam recusandae sit error tempore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptate quia in aspernatur dolores impedit unde veritatis. Illum eligendi dignissimos deserunt accusantium sint asperiores repellendus ut. Sed, adipisci voluptate atque!</p>
+                    <hr>
+                    <div class="card__product-options">
+                      <div class="row clearfix">
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="card__option">
+                            <h1 class="card__option-title">Color:</h1>
+                            <div class="objects__view">
+                              <span><img src="images/color__white.png" alt=""></span>
+                              <span><img src="images/color__brown.png" alt=""></span>
+                              <span><img src="images/color__black.png" alt=""></span>
+                              <span><img src="images/color__orange.png" alt=""></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="card__option">
+                            <h1 class="card__option-title">Tamaño:</h1>
+                            <div class="objects__view">
+                              <span><img src="images/ks__icon.png" alt=""></span>
+                              <span><img src="images/qs__icon.png" alt=""></span>
+                              <span><img src="images/mat__icon.png" alt=""></span>
+                              <span><img src="images/ind__icon.png" alt=""></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                          <div class="card__option">
+                            <h1 class="card__option-title">Cantidad:</h1>
+                            <div class="count__input clearfix">
+                              <a href="#" class="sub">-</a>
+                              <input type="text" value="1" name="guests" class="count-input" disabled="disabled">
+                              <a href="#" class="add">+</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="card__btn-cart">Agregar al carrito</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- end Card Section -->
+    
+    
+    <!-- Header -->
+    <header>
+      <!-- Top Bar -->
+      <section class="top-bar-section clearfix">
+        <div class="top__phone clearfix">
+          <a href="#" id="top-phone" class="track-link" data-track="phone-header">
+            <img src="images/phone__icon.png" alt="">
+          </a>
+          <a href="tel:00000000" id="top-number">00-00-00-00-00</a>
+          <!-- Brand Logo Mobil -->
+          <div class="brand right small-device">
+            <h1 class="brand__logo">
+              <a href="index.html" class="brand__link menuzord-brand" title="Peker">Peker</a>
+            </h1>
+          </div>
+          <!-- end Brand Logo Mobil -->
+        </div>
+        <div class="top__nav clearfix">
+          <a href="#login-popup" class="nav__item login-link">Acceso</a>
+          <a href="#" class="cart__top-btn nav__item" id="cart-header-btn">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="cart__label">Carrito</span>
+            <span class="quantity">0</span>
+          </a>
+          <a href="contacto.html" class="nav__item">Contacto</a>
+        </div>
+        <!-- Cart View -->
+        <div class="cart-preview-section isNotShow" id="cart-header">
+          <div class="cart-header-wrapper">
+            <div class="preview__list">
+              <div class="preview__items">
+                <div class="preview__item first">
+                  <div class="row clearfix">
+                    <div class="col-xs-3">
+                      <div class="preview-item__img">
+                        <a href="#" class="card-trigger">
+                          <img src="http://placehold.it/500x500" alt="" class="img-responsive">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="preview-item__desc">
+                        <a href="#" class="card-trigger">
+                          <h1>Nombre del producto</h1>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consequuntur obcaecati.</p>
+                      </div>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="preview-item__price">
+                        <span>$829.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="preview__total clearfix">
+                <span class="preview-total__title left">Total:</span>
+                <span class="preview-total__price right">$1,247.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="preview__btns clearfix">
+            <a href="carrito.html" class="preview-btns__btn tocart left">Ver Carrito</a>
+            <a href="login-checkout.html" class="preview-btns__btn tocheck right">Checkout</a>
+          </div>
+        </div>
+        <!-- end Cart View -->
+      </section>
+      <!-- end Top Bar -->
+
+      <!-- Nav Menu -->
+      <nav class="main-nav solid">
+        <div class="container">
+          <div class="head-nav clearfix">
+            <!-- Search -->
+            <div class="head-search right clearfix large-device">
+              <form action="">
+                <input class="search-input" type="text" placeholder="Ingrese su Búsqueda">
+                <button class="search-btn" type="button">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
+            <!-- end Search -->
+            <!-- Main Nav -->
+            <div id="menuzord" class="menuzord left clearfix">
+              <!-- Brand Logo -->
+              <div class="brand left large-device">
+                <h1 class="brand__logo">
+                  <a href="index.html" class="brand__link menuzord-brand" title="Peker">Peker</a>
+                </h1>
+              </div>
+              <!-- end Brand Logo -->
+              <!-- Search Mobil -->
+              <div class="head-search right clearfix small-device">
+                <form action="">
+                  <input class="search-input" type="text" placeholder="Ingrese su Búsqueda">
+                  <button class="search-btn" type="button">
+                    <img src="images/search__icon.png" alt="">
+                  </button>
+                </form>
+              </div>
+              <!-- end Search Mobil -->
+              <ul class="menuzord-menu">
+                <li><a href="grid.html">Recamaras</a></li>
+                <li><a href="grid.html">Salas</a></li>
+                <li><a href="grid.html">Comedores</a></li>
+                <li><a href="grid.html">Antecomedores</a></li>
+              </ul>
+            </div>
+            <!-- end Main Nav -->
+          </div>
+        </div>
+      </nav>
+      <!-- end Nav Menu -->
+    </header>
+    <!-- end Header -->
+    <!-- Main -->
+    <main>
+      <!-- Return Control -->
+      <section class="return-control">
+        <div class="container">
+          <a href="#" class="return-ctrl">Regresar</a>
+        </div>
+      </section>
+      <!-- end Return Control -->
+      <!-- Cart Section -->
+      <section class="cart-section">
+        <div class="container">
+          <!-- Page Title -->
+          <section class="page-title clearfix">
+            <h1>Mi carrito</h1>
+            <div class="title-block cart-controls">
+              <a href="#" class="red-btn">vaciar carrito</a>
+              <a href="#" class="black-btn">actualizar carrito</a>
+              <a href="#" class="form__btn">pagar</a>
+            </div>
+          </section>
+          <!-- end Page Title -->
+          <!-- Cart List Products -->
+          <section class="cart-list-products">
+            <div class="cart__item">
+              <div class="row clearfix">
+                <div class="col-md-6 col-sm-6">
+                  <div class="cart__product-info">
+                    <div class="row clearfix">
+                      <div class="col-xs-3">
+                        <div class="preview-item__img">
+                          <a href="#" class="card-trigger">
+                            <img src="http://placehold.it/500x500" alt="" class="img-responsive">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="preview-item__desc">
+                          <a href="#" class="card-trigger">
+                            <h1>Nombre del producto</h1>
+                          </a>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consequuntur obcaecati.</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="preview-item__price">
+                          <span>$209.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="cart__product-controls">
+                    <div class="row clearfix">
+                      <div class="col-sm-4 col-xs-6">
+                        <div class="count__input clearfix">
+                          <a href="#" id="sub" class="sub">-</a>
+                          <input type="text" value="1" name="guests" id="count-input" class="count-input" disabled="disabled">
+                          <a href="#" id="add" class="add">+</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6">
+                        <div class="preview-item__price">
+                          <span>$209.00</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-12">
+                        <div class="cart__product-actions clearfix">
+                          <a href="#" class="edit">
+                            <i class="fa fa-refresh"></i>
+                            <span>Actualizar</span>
+                          </a>
+                          <a href="#" class="remove">
+                            <i class="fa fa-times-circle"></i>
+                            <span>Eliminar</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart__item">
+              <div class="row clearfix">
+                <div class="col-md-6 col-sm-6">
+                  <div class="cart__product-info">
+                    <div class="row clearfix">
+                      <div class="col-xs-3">
+                        <div class="preview-item__img">
+                          <a href="#" class="card-trigger">
+                            <img src="http://placehold.it/500x500" alt="" class="img-responsive">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="preview-item__desc">
+                          <a href="#" class="card-trigger">
+                            <h1>Nombre del producto</h1>
+                          </a>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consequuntur obcaecati.</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="preview-item__price">
+                          <span>$209.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="cart__product-controls">
+                    <div class="row clearfix">
+                      <div class="col-sm-4 col-xs-6">
+                        <div class="count__input clearfix">
+                          <a href="#" class="sub">-</a>
+                          <input type="text" value="1" name="guests" class="count-input" disabled="disabled">
+                          <a href="#" class="add">+</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6">
+                        <div class="preview-item__price">
+                          <span>$209.00</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-12">
+                        <div class="cart__product-actions clearfix">
+                          <a href="#" class="edit">
+                            <i class="fa fa-refresh"></i>
+                            <span>Actualizar</span>
+                          </a>
+                          <a href="#" class="remove">
+                            <i class="fa fa-times-circle"></i>
+                            <span>Eliminar</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart__item last">
+              <div class="row clearfix">
+                <div class="col-md-6 col-sm-6">
+                  <div class="cart__product-info">
+                    <div class="row clearfix">
+                      <div class="col-xs-3">
+                        <div class="preview-item__img">
+                          <a href="#" class="card-trigger">
+                            <img src="http://placehold.it/500x500" alt="" class="img-responsive">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <div class="preview-item__desc">
+                          <a href="#" class="card-trigger">
+                            <h1>Nombre del producto</h1>
+                          </a>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consequuntur obcaecati.</p>
+                        </div>
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="preview-item__price">
+                          <span>$209.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="cart__product-controls">
+                    <div class="row clearfix">
+                      <div class="col-sm-4 col-xs-6">
+                        <div class="count__input clearfix">
+                          <a href="#" id="sub" class="sub">-</a>
+                          <input type="text" value="1" name="guests" id="count-input" class="count-input" disabled="disabled">
+                          <a href="#" id="add" class="add">+</a>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-6">
+                        <div class="preview-item__price">
+                          <span>$209.00</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 col-xs-12">
+                        <div class="cart__product-actions clearfix">
+                          <a href="#" class="edit">
+                            <i class="fa fa-refresh"></i>
+                            <span>Actualizar</span>
+                          </a>
+                          <a href="#" class="remove">
+                            <i class="fa fa-times-circle"></i>
+                            <span>Eliminar</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end Cart List Products -->
+          <!-- Cart Actions Section -->
+          <section class="cart-actions-section">
+            <div class="row clearfix">
+              <div class="col-md-5 col-sm-4 col-xs-12">
+                <div class="action__continue">
+                  <a href="#">Continuar comprando</a>
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-8 col-xs-12">
+                <div class="row clearfix">
+                  <div class="col-sm-5 col-xs-12">
+                    <div class="action__promo">
+                      <h1>Código de descuento</h1>
+                      <p>Ingresa tu código de descuento si cuentas con uno.</p>
+                      <form action="#" method="post" id="promo-code" class="clearfix">
+                        <div class="promo__input">
+                          <input type="text" name="code">
+                        </div>
+                        <div class="promo__submit">
+                          <button type="submit"><i class="fa fa-angle-double-right"></i></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-sm-7 col-xs-12">
+                    <div class="action__resume-total clearfix">
+                      <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <td>Subtotal</td>
+                            <td class="action__price">MXN $<span>0.00</span></td>
+                          </tr>
+                          <tr>
+                            <td>Total</td>
+                            <td class="action__price">MXN $<span>0.00</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <a href="#" class="form__btn">Pagar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end Cart Actions Section -->
+        </div>
+      </section>
+      <!-- end Cart Section -->
+    </main>
+    <!-- end Main -->
+    <!-- Footer -->
+    <footer>
+      <!-- Footer Info -->
+      <section class="footer-info">
+        <div class="container">
+          <div class="row clearfix">
+            <div class="col-sm-3 col-xs-12">
+              <div class="footer__section">
+                <h1 class="footer__title">Acerca de nosotros</h1>
+                <p class="footer__txt about">Empresa socialmente responsable por el alto porcenaje de materiales reciclados, contribuyendo a la conservación de nuestro medio y nuestros recursos naturales.</p>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="footer__section">
+                <h1 class="footer__title">Atención al cliente</h1>
+                <ul class="footer__links menu__list">
+                  <li><a href="#">¿Cómo Comprar?</a></li>
+                  <li><a href="#">Formas de pago</a></li>
+                  <li><a href="#">Envíos</a></li>
+                  <li><a href="#">Políticas de Compra</a></li>
+                  <li><a href="#">Preguntas Frecuentes</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="footer__section">
+                <h1 class="footer__title">Contáctanos</h1>
+                <div class="footer__phone footer__links">
+                  <div class="phone-ctrl--green">
+                    <a href="#" class="track-link" data-track="phone-footer">Ver Teléfonos</a>
+                  </div>
+                  <div class="phone-number--green">
+                    <a href="#">00-00-00-00-00</a>
+                    <a href="#">00-00-00-00-00</a>
+                    <a href="#">00-00-00-00-00</a>
+                  </div>
+                </div>
+                <div class="footer__email footer__links">
+                  <div class="email__links">
+                    <div class="links__items">
+                      <a href="mailto:contacto@peker.com">contacto@peker.com</a>
+                      <a href="mailto:ventas@peker.com">ventas@peker.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+              <div class="footer__section">
+                <h1 class="footer__title">Síguenos en:</h1>
+                <div class="footer__social">
+                  <a href="#">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Footer Info -->
+      <!-- Footer Copyright -->
+      <section class="footer-copyright">
+        <div class="container">
+          <span>Peker Muebles | <span class="mucha-web">Desarrollado por <a href="#">Mucha Web</a></span></span>
+        </div>
+      </section>
+      <!-- end Footer Copyright -->
+    </footer>
+    <!-- end Footer -->
+    
+    
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-1.11.1.min.js"><\/script>')</script><![endif]-->
+    <!--[if gt IE 8]><!-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-2.1.1.min.js"><\/script>')</script><!--<![endif]-->
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/range.js"></script>
+    <script src="scripts/zoom.js"></script>
+    <script src="scripts/track.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <script>
+      (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+      function() {
+      (b[l].q = b[l].q || []).push(arguments)
+      });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
